@@ -28,10 +28,10 @@ try {
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES => false,
     ]);
-    echo json_encode(["success" => true, "message" => "Conexión exitosa"]);
+    //echo json_encode(["success" => true, "message" => "Conexión exitosa"]);
     //echo "Conexión exitosa";
 
 } catch (PDOException $e) {
-    echo json_encode(["success" => false, "message" => "Error de conexión: " . $e->getMessage()]);
+    //echo json_encode(["success" => false, "message" => "Error de conexión: " . $e->getMessage()]);
     //echo "Error de conexión: " . $e->getMessage();
 }
