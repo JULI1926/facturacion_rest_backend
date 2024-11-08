@@ -1,8 +1,5 @@
 <?php
-header('Content-Type: application/json');
-$dsn = 'mysql:host=mysql.hostinger.com;dbname=u283539135_factura;charset=utf8';
-$username = 'u283539135_factura';
-$password = 'Mani2024@';
+@include('connection.php');
 
 try {
     $pdo = new PDO($dsn, $username, $password);
