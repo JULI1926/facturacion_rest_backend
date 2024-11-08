@@ -52,6 +52,7 @@ try {
             } else {
                 $stmt = $pdo->query("SELECT * FROM usuarios");
                 $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                echo $usuarios;
                 echo json_encode($usuarios);
             }
             break;
